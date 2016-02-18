@@ -25,7 +25,156 @@
 			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
 		</div>
 
-		<h4>Projects</h4>
+        {{#if}}
+<div class="row">
+<div class="project col-md-4" id="{{projects.0.id}}">
+	<div class="thumbnail">
+		<a href="/project/{{projects.0.id}}">
+			<img src="images/{{projects.0.image}}" alt="Lorem Pixel image">
+			<h4>{{projects.0.title}}</h4>
+		</a>
+		<div class="details"></div>
+	<button class="btn btn-default likeBtn">Like</button>						
+	</div>
+</div>
+
+<div class="project col-md-4" id="{{projects.1.id}}">
+	<div class="thumbnail">
+		<a href="/project/{{projects.1.id}}">
+			<img src="images/{{projects.1.image}}" alt="Lorem Pixel image" class="img-responsive">
+			<h4>{{projects.1.title}}</h4>
+		</a>
+		<button class="btn btn-default likeBtn">Like</button>						
+		<div class="details"></div>
+	</div>
+</div>
+
+
+<div class="project col-md-4" id="{{projects.2.id}}">
+	<div class="thumbnail">
+		<a href="/project/{{projects.2.id}}">
+			<img src="images/{{projects.2.image}}" alt="Lorem Pixel image" class="img-responsive">
+			<h4>{{projects.2.title}}</h4>
+		</a>
+		<button class="btn btn-default likeBtn">Like</button>						
+		<div class="details"></div>
+	</div>
+</div>
+</div>
+
+<div class="row">
+<div class="project col-md-3" id="{{projects.3.id}}">
+	<div class="thumbnail">
+		<a href="/project/{{projects.3.id}}">
+			<img src="images/{{projects.3.image}}" alt="Lorem Pixel image" class="img-responsive">
+			<h4>{{projects.3.title}}</h4>
+		</a>
+		<button class="btn btn-default likeBtn">Like</button>						
+		<div class="details"></div>
+	</div>
+</div>
+
+
+<div class="project col-md-3" id="{{projects.4.id}}">
+	<div class="thumbnail">
+		<a href="/project/{{projects.4.id}}">
+			<img src="images/{{projects.4.image}}" alt="Lorem Pixel image" class="img-responsive">
+			<h4>{{projects.4.title}}</h4>
+		</a>
+		<button class="btn btn-default likeBtn">Like</button>						
+		<div class="details"></div>
+	</div>
+</div>
+
+
+<div class="project col-md-3" id="{{projects.5.id}}">
+	<div class="thumbnail">
+		<a href="/project/{{projects.5.id}}">
+			<img src="images/{{projects.5.image}}" alt="Lorem Pixel image" class="img-responsive">
+			<h4>{{projects.5.title}}</h4>
+		</a>
+		<button class="btn btn-default likeBtn">Like</button>						
+		<div class="details"></div>
+	</div>
+</div>
+
+<div class="project col-md-3" id="{{projects.6.id}}">
+	<div class="thumbnail">
+		<a href="/project/{{projects.6.id}}">
+			<img src="images/{{projects.6.image}}" alt="Lorem Pixel image" class="img-responsive">
+			<h4>{{projects.6.title}}</h4>
+		</a>
+		<button class="btn btn-default likeBtn">Like</button>						
+		<div class="details"></div>
+	</div>
+</div>
+</div>
+
+<div class="row">
+<div class="project col-md-2" id="{{projects.7.id}}">
+	<div class="thumbnail">
+		<a href="/project/{{projects.7.id}}">
+			<img src="images/{{projects.7.image}}" alt="Lorem Pixel image" class="img-responsive">
+			<h4>{{projects.7.title}}</h4>
+		</a>
+		<button class="btn btn-default likeBtn">Like</button>						
+		<div class="details"></div>
+	</div>
+</div>
+
+<div class="project col-md-2" id="{{projects.8.id}}">
+	<div class="thumbnail">
+		<a href="/project/{{projects.8.id}}">
+			<img src="images/{{projects.8.image}}" alt="Lorem Pixel image" class="img-responsive">
+			<h4>{{projects.8.title}}</h4>
+		</a>
+		<button class="btn btn-default likeBtn">Like</button>						
+		<div class="details"></div>
+	</div>
+</div>
+
+<div class="project col-md-2" id="{{projects.9.id}}">
+	<div class="thumbnail">
+		<a href="/project/{{projects.9.id}}">
+			<img src="images/{{projects.9.image}}" alt="Lorem Pixel image" class="img-responsive">
+			<h4>{{projects.9.title}}</h4>
+		</a>
+		<button class="btn btn-default likeBtn">Like</button>						
+		<div class="details"></div>
+	</div>
+</div>
+
+<div class="project col-md-2" id="{{projects.10.id}}">
+	<div class="thumbnail">
+		<a href="/project/{{projects.10.id}}">
+			<img src="images/{{projects.10.image}}" alt="Lorem Pixel image" class="img-responsive">
+			<h4>{{projects.10.title}}</h4>
+		</a>
+		<button class="btn btn-default likeBtn">Like</button>						
+		<div class="details"></div>
+	</div>
+</div>
+
+<div class="project col-md-2" id="{{projects.11.id}}">
+	<div class="thumbnail">
+		<a href="/project/{{projects.11.id}}">
+			<img src="images/{{projects.11.image}}" alt="Lorem Pixel image" class="img-responsive">
+			<h4>{{projects.11.title}}</h4>
+		</a>
+		<button class="btn btn-default likeBtn">Like</button>						
+		<div class="details"></div>
+	</div>
+</div>
+
+<div class="project col-md-2" id="{{projects.12.id}}">
+	<div class="thumbnail">
+		<a href="/project/{{projects.12.id}}">
+			<img src="images/{{projects.12.image}}" alt="Lorem Pixel image" class="img-responsive">
+			<h4>{{projects.12.title}}</h4>
+		</a>
+		<button class="btn btn-default likeBtn">Like</button>						
+		<div class="details"></div>        {{else}} 
+	    <h4>Projects</h4>
 		{{#each projects}}
 			<div class="project" id="{{id}}">
 				<div class="thumbnail">
@@ -38,10 +187,10 @@
 				</div>
 			</div>
 		{{/each}}
-
-
+        {{/if}}
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/introHCI.js"></script>
+	{{<googleAnalytics}}
 </body>
 </html>
