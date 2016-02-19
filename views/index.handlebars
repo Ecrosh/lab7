@@ -2,6 +2,7 @@
 
 <html>
 <head>
+    {{> gridExperiment}}
 	<title>HCI Project Portfolio</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,23 +16,9 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->  
+    <![endif]--> 
 
-    <!-- Google Analytics Content Experiment code -->
-<script>function utmx_section(){}function utmx(){}(function(){var
-k='117001007-0',d=document,l=d.location,c=d.cookie;
-if(l.search.indexOf('utm_expid='+k)>0)return;
-function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
-indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
-length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
-'<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
-'://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
-'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
-valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
-'" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
-</script><script>utmx('url','A/B');</script>
-<!-- End of Google Analytics Content Experiment code -->
-      
+
 </head>
 
 <body>
@@ -41,7 +28,9 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
 		</div>
 
-        {{#if}}
+	    <h4>Projects</h4>
+
+        {{#if grid}}
 <div class="row">
 <div class="project col-md-4" id="{{projects.0.id}}">
 	<div class="thumbnail">
@@ -189,8 +178,8 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 			<h4>{{projects.12.title}}</h4>
 		</a>
 		<button class="btn btn-default likeBtn">Like</button>						
-		<div class="details"></div>        {{else}} 
-	    <h4>Projects</h4>
+		<div class="details"></div>       
+		{{else}} 
 		{{#each projects}}
 			<div class="project" id="{{id}}">
 				<div class="thumbnail">
@@ -207,6 +196,6 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/introHCI.js"></script>
-	{{<googleAnalytics}}
+	{{> googleAnalytics}}
 </body>
 </html>
